@@ -15,12 +15,7 @@
                 <!-- <img src="{{asset('img/dc-logo.png')}}" alt="dc logo"> -->
             </div>
             <div class="main_menu">
-                <!-- <ul class="menu">
-                    @foreach(config('db.menu') as $item)
-                    <li><a class="{{ Route::currentRouteName() === $item['href'] ? 'active' :'' }}" href="{{ route($item['href']) }}"> {{ $item['text'] }}</a></li>
-                    @endforeach
-
-                </ul> -->
+                
             </div>
         </div>
     </nav>
