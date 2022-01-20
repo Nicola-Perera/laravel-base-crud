@@ -2,7 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
-class ComicsSeeder extends Seeder
+use App\Model\Comic;
+
+class ComicSeeder extends Seeder
 {
     // @return variant_mod
 

@@ -18,9 +18,4 @@ Route::get('/home', function () {
 })->name('home');
 
 // Comics Routes
-Route::get('/comics', function () {
-    $comics = config('db.comics');
-    // ddd($comics);
-
-    return view('comics.index', compact('comics'));
-})->name('comics');
+Route::get('/comics', 'ComicController@index')->name('comics');
