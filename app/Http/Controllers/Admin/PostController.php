@@ -11,7 +11,8 @@ class PostController extends Controller
     // show list of all resources
     public function index()
     {
-        
+        $posts = Post::all();
+        return view('admin.posts.index', compact('posts'));
     }
 
     // show form to create new resource

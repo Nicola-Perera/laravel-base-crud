@@ -25,7 +25,7 @@ Route::get('comics/{comic}', 'ComicController@show')->name('comic');
 // Posts by Admin
 
 // show list of all resources
-Route::get('posts', 'Admin\PostController@index')->name('admin.posts.index');
+Route::get('admin/posts', 'Admin\PostController@index')->name('admin.posts.index');
 
 // show form to create new resource
 Route::get('posts/create', 'Admin\PostController@create')->name('admin.posts.create');
